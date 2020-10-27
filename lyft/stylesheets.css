@@ -1,0 +1,261 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid: 80px 589px 80px 500px 42px / 1fr;
+}
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex; 
+    justify-content: center;
+    border-bottom: 2px solid black;
+    
+}
+
+
+
+.header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    /*border: 2px solid blue;*/
+    display: flex;
+    align-items: center;
+}
+
+nav .search {
+    border: 2px solid grey;
+    border-radius: 20px;
+    height: 70%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+nav .search input {
+    border-radius: 5px;
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+nav .search input {
+    font-size: 20px;
+    color: grey;
+}
+
+nav .list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    flex-shrink: 4;
+}
+
+nav .list li{
+    display: flex;
+    align-items: center;
+    height: 95%;
+    padding: 0px 20px;
+    border-left: 1px solid rgb(92, 92, 92);
+}
+
+nav .list a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+nav .list a:hover{
+    color: blue;
+}
+
+.fab {
+    color: #fd1ebe;
+}
+
+.fab:hover {
+    color: #0c0c30;
+}
+
+.banner {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    
+    height: 589px;
+    overflow: hidden;
+    
+}
+
+.banner video {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.buttons {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    
+    display: flex; 
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.inner-buttons { 
+    width: 80%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.inner-buttons h3 {
+    
+    padding: 8px 24px;
+    border-radius: 20px;
+
+}
+
+.inner-buttons .sign-up {
+    color: white;
+    background-color: rgb(48, 48, 245);
+}
+
+.inner-buttons .sign-up:hover {
+    background-color: rgb(0, 0, 85);
+}
+
+.inner-buttons .apply {
+    border: 1px solid black;
+
+}
+
+.inner-buttons .apply:hover {
+    
+    background-color: rgb(224, 221, 221);
+}
+
+.info {
+    grid-row: 4 / 5;
+    grid-column: 1 /2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-info-box {
+    
+    height: 80%;
+    width: 95%;
+    display: flex;
+    justify-content: space-around; 
+    padding: 50px;
+    
+    
+}
+
+.driver {
+    
+    flex: 1;
+    
+}
+
+.rider {
+    
+    flex: 1;
+
+}
+
+.lyft {
+    
+    flex: 1;
+
+}
+
+.infobuttons {
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+    
+    
+}
+
+.driver, .rider, .lyft {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.driver ul, .rider ul, .lyft ul {
+    list-style: none;
+}
+
+.driver h4, .rider h4, .lyft h4 {
+    margin-bottom: 10px;
+} 
+
+.driver li, .rider li, .lyft li {
+    line-height: 22px;
+    cursor: pointer;
+
+}
+
+.driver li:hover, .rider li:hover, .lyft li:hover {
+    color: blue;
+    
+}
+
+.infobuttons h4
+{
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.infobuttons h4:hover {
+    background-color: rgb(237, 237, 243);
+}
+
+.footer {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 100px;
+    
+
+}
+
+.footer .fab {
+    margin: 0px 15px;
+
+}
+
+
+
